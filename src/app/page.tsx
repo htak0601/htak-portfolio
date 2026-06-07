@@ -1,8 +1,8 @@
-import About from "./setctions/About";
-import Contact from "./setctions/Contact";
-import Experience from "./setctions/Experience";
-import Hero from "./setctions/Hero";
-import Projects from "./setctions/Projects";
+import About from "./setctions/About"
+import Contact from "./setctions/Contact"
+import Experience from "./setctions/Experience"
+import Hero from "./setctions/Hero"
+import Projects from "./setctions/Projects"
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
       <Experience />
       <Contact />
     </main>
-  );
+  )
 }
