@@ -1,3 +1,7 @@
 export default function Experience() {
-  return <div>Experience</div>;
+  return (
+    <section id="experience" className="min-h-screen scroll-mt-28 bg-gray-100">
+      Experience
+    </section>
+  )
 }
