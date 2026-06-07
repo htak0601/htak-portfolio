@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="min-h-screen">
         <Navbar />
 
-        <main className="pt-20">{children}</main>
+        <main className="pt-24 md:pt-28">{children}</main>
 
         <ScrollTopButton />
       </body>
