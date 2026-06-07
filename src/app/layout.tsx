@@ -16,10 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <body className="flex min-h-screen flex-col">
-        {children}
-
+      <body className="min-h-screen">
         <Navbar />
+
+        <main className="pt-20">{children}</main>
+
         <ScrollTopButton />
       </body>
     </html>
