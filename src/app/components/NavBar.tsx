@@ -4,16 +4,16 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <header className="fixed top-5 right-10 left-10 z-50">
-      <div className="flex h-20 items-center justify-between border-y backdrop-blur-md">
+    <header className="fixed top-5 right-0 left-0 z-50">
+      <div className="mx-5 flex h-14 items-center justify-between border-y bg-white/60 backdrop-blur md:mx-10 md:h-20">
         <h1>
-          <Link href="/">
+          <Link href="/" className="block w-20 md:w-24">
             <Image
               src="/icons/logo.svg"
               alt="h.tak logo"
               width={100}
               height={100}
-              className="h-auto w-24"
+              className="h-auto w-full"
             />
           </Link>
         </h1>
@@ -41,7 +41,7 @@ export default function Navbar() {
 
         {/* 모바일 메뉴 버튼 */}
         <button aria-label="open menu" className="flex items-center justify-center md:hidden">
-          <Menu size={36} />
+          <Menu size={30} />
         </button>
       </div>
     </header>

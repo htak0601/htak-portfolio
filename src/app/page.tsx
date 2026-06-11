@@ -1,8 +1,8 @@
-import About from "./setctions/About"
-import Contact from "./setctions/Contact"
-import Experience from "./setctions/Experience"
-import Hero from "./setctions/Hero"
-import Projects from "./setctions/Projects"
+import About from "./setctions/about/About"
+import Contact from "./setctions/contact/Contact"
+import Experience from "./setctions/experience/Experience"
+import Hero from "./setctions/hero/Hero"
+import Projects from "./setctions/projects/Projects"
 
 export default function Home() {
   return (
