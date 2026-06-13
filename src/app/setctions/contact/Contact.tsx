@@ -31,7 +31,7 @@ export default function Contact() {
           {/* Contact Links */}
           <div className="mt-10 flex items-center gap-4">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:taklee2@naver.com"
               aria-label="Email"
               className="rounded-full border border-zinc-200 p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-zinc-100"
             >
