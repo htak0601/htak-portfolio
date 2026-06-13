@@ -11,11 +11,11 @@ export default function About() {
         {/* TITLE */}
         <header className="flex flex-col items-center">
           <Image src="/icons/ic_quote.svg" alt="about icon" width={45} height={45} />
-          <h2 className="mt-2 text-lg font-bold">About</h2>
+          <h2 className="mt-2 text-lg font-bold">ABOUT</h2>
         </header>
 
         {/* INTRO */}
-        <p className="mt-6 text-center text-xl leading-relaxed font-bold text-zinc-100 md:text-2xl">
+        <p className="mt-12 text-center text-xl leading-relaxed font-bold text-zinc-100 md:mt-16 md:text-2xl">
           사용자 경험과 코드 구조를 함께 설계하는 <br className="md:hidden" />
           프론트엔드 개발자 이형탁입니다.
         </p>
