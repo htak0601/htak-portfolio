@@ -15,7 +15,7 @@ export default function Projects() {
         </header>
 
         {/* Content */}
-        <div className="mt-6 grid grid-cols-1 gap-20 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-20 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

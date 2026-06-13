@@ -13,7 +13,7 @@ export default function Experience() {
         </header>
 
         {/* Content */}
-        <div className="mt-16 grid gap-16 lg:grid-cols-[1.4fr_0.8fr] lg:gap-20">
+        <div className="mt-12 grid gap-16 md:mt-16 lg:grid-cols-[1.4fr_0.8fr] lg:gap-20">
           {/* Left */}
           <div className="space-y-16">
             {/* Career */}
