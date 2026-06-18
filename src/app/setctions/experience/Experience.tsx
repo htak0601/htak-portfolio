@@ -116,8 +116,8 @@ export default function Experience() {
               </div>
             </TimelineItem>
 
-            {/* Certificate */}
-            <TimelineItem title="CERTIFICATE">
+            {/* Certifications */}
+            <TimelineItem title="CERTIFICATIONS">
               <div className="space-y-8">
                 <div>
                   <h4 className="font-semibold">웹디자인기능사</h4>
