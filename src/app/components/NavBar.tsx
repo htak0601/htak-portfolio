@@ -11,7 +11,9 @@ export default function Navbar() {
   return (
     <header className="fixed top-5 right-0 left-0 z-50">
       <div
-        className={`mx-5 overflow-hidden bg-white/90 backdrop-blur transition-[border-radius,box-shadow] duration-300 md:mx-10 ${isOpen ? "rounded-2xl shadow-md" : "border-y"} `}
+        className={`mx-5 overflow-hidden bg-white/90 backdrop-blur md:mx-10 ${
+          isOpen ? "rounded-2xl shadow-md" : "border-y"
+        }`}
       >
         <div className="flex h-14 items-center justify-between px-4 md:h-20">
           <h1>
