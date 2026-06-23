@@ -22,12 +22,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
         </div>
 
+        {/* Thumbnail title */}
         <div className="absolute inset-0 flex items-center justify-center bg-black/40 transition-all duration-300 group-hover:bg-black/50">
           <div className="text-center text-white">
-            <p className="text-base tracking-widest uppercase">Project Overview</p>
+            <p className="text-sm tracking-[0.25em] uppercase opacity-80">Project Overview</p>
 
-            <span className="relative mt-2 inline-block pb-1 text-2xl font-semibold">
-              View Details
+            <span className="relative mt-3 inline-block pb-1 text-2xl font-semibold">
+              View Details →
               <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-500 group-hover:w-full" />
             </span>
           </div>
@@ -42,13 +43,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <div className="flex gap-3">
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                <FaGithub size={18} />
+                <FaGithub size={18} className="transition-opacity hover:opacity-60" />
               </a>
             )}
 
             {project.deployUrl && (
               <a href={project.deployUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={18} />
+                <ExternalLink size={18} className="transition-opacity hover:opacity-60" />
               </a>
             )}
           </div>
