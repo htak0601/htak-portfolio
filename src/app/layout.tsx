@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import { pretendard } from "./fonts"
 import "./globals.css"
 import ScrollTopButton from "./components/ScrollTopButton"
-import Navbar from "./components/NavBar"
 
 export const metadata: Metadata = {
   title: "이형탁 | Frontend Developer",
@@ -17,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className={pretendard.variable}>
       <body className="min-h-screen">
-        <Navbar />
-
-        <main className="pt-24 md:pt-28">{children}</main>
+        {children}
 
         <ScrollTopButton />
       </body>
