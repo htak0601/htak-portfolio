@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react"
 import { FaGithub } from "react-icons/fa"
 
 import { Project } from "./types"
+import Link from "next/link"
 
 interface ProjectCardProps {
   project: Project
@@ -12,7 +13,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="flex flex-col">
       {/* Thumbnail */}
-      <div className="group relative cursor-pointer overflow-hidden duration-300 md:rounded-3xl">
+      <Link
+        href={`/projects/${project.slug}`}
+        className="group relative block overflow-hidden md:rounded-3xl"
+      >
         <div className="relative aspect-square w-full">
           <Image
             src={project.image}
@@ -33,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </span>
           </div>
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="mt-5">
