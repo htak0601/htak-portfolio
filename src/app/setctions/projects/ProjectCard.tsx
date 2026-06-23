@@ -2,8 +2,8 @@ import Image from "next/image"
 import { ExternalLink } from "lucide-react"
 import { FaGithub } from "react-icons/fa"
 
-import { Project } from "./types"
 import Link from "next/link"
+import { Project } from "../../types/project"
 
 interface ProjectCardProps {
   project: Project
