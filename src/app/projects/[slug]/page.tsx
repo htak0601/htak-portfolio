@@ -3,12 +3,12 @@ import { notFound } from "next/navigation"
 import { PROJECTS } from "@/app/data/ProjectData"
 import { PROJECT_DETAILS } from "@/app/data/ProjectDetailData"
 
-import ProjectHero from "@/app/components/project-detail/ProjectHero"
-import Skills from "@/app/components/project-detail/Skills"
-import ProjectFeatures from "@/app/components/project-detail/ProjectFeatures"
-import Troubleshooting from "@/app/components/project-detail/Troubleshooting"
-import Achievement from "@/app/components/project-detail/Achievement"
 import Link from "next/link"
+import ProjectHero from "./components/ProjectHero"
+import Skills from "./components/Skills"
+import ProjectFeatures from "./components/ProjectFeatures"
+import Troubleshooting from "./components/Troubleshooting"
+import Achievement from "./components/Achievement"
 
 interface ProjectDetailPageProps {
   params: Promise<{
@@ -28,8 +28,13 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
   }
 
   return (
-    <main>
-      <Link href="/#projects">← 목록으로</Link>
+    <main className="mx-auto max-w-4xl px-6 py-16">
+      <Link
+        href="/#projects"
+        className="rounded-3xl border border-zinc-300 px-3 py-4 text-sm text-zinc-500 transition hover:text-zinc-900"
+      >
+        ← 프로젝트 목록으로
+      </Link>
 
       <ProjectHero project={project} description={detail.description} />
 
