@@ -1,10 +1,8 @@
+import { TroubleshootingItem } from "@/app/types/project"
+import Image from "next/image"
+
 interface TroubleshootingProps {
-  items: readonly {
-    title: string
-    problem: string
-    solution: string
-    result: string
-  }[]
+  items: readonly TroubleshootingItem[]
 }
 
 export default function Troubleshooting({ items }: TroubleshootingProps) {
@@ -30,6 +28,38 @@ export default function Troubleshooting({ items }: TroubleshootingProps) {
               <div>
                 <h4 className="text-base font-semibold">[ 해결 ]</h4>
                 <p className="mt-1 leading-7 text-zinc-700">{item.solution}</p>
+
+                {/* BeforeImage */}
+                {item.beforeImage && (
+                  <div className="mt-5 flex flex-col items-center">
+                    <Image
+                      src={item.beforeImage}
+                      alt={`${item.title} Before`}
+                      width={800}
+                      height={500}
+                      className="rounded-xl border border-zinc-200"
+                    />
+                    <p className="mt-2 text-center text-base font-medium text-zinc-500">
+                      {item.beforeCaption}
+                    </p>
+                  </div>
+                )}
+
+                {/* AfterImage */}
+                {item.afterImage && (
+                  <div className="mt-8 flex flex-col items-center">
+                    <Image
+                      src={item.afterImage}
+                      alt={`${item.title} After`}
+                      width={800}
+                      height={500}
+                      className="rounded-xl border border-zinc-200"
+                    />
+                    <p className="mt-2 text-center text-base font-medium text-zinc-500">
+                      {item.afterCaption}
+                    </p>
+                  </div>
+                )}
               </div>
 
               <div>
