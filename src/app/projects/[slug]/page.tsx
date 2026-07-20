@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-
 import { PROJECTS } from "@/app/data/ProjectData"
 import { PROJECT_DETAILS } from "@/app/data/ProjectDetailData"
 
@@ -21,9 +20,13 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
 
   const project = PROJECTS.find((project) => project.slug === slug)
 
-  const detail = PROJECT_DETAILS[slug as keyof typeof PROJECT_DETAILS]
+  if (!project) {
+    notFound()
+  }
 
-  if (!project || !detail) {
+  const detail = PROJECT_DETAILS[project.slug]
+
+  if (!detail) {
     notFound()
   }
 
