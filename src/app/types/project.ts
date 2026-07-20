@@ -1,6 +1,8 @@
+export type ProjectSlug = "trun" | "experia" | "portfolio"
+
 export interface Project {
   id: number
-  slug: string
+  slug: ProjectSlug
 
   title: string
   category: string
@@ -14,4 +16,24 @@ export interface Project {
 
   githubUrl?: string
   deployUrl?: string
+}
+
+export interface TroubleshootingItem {
+  title: string
+  problem: string
+  solution: string
+  result: string
+
+  beforeImage?: string
+  beforeCaption?: string
+
+  afterImage?: string
+  afterCaption?: string
+}
+
+export interface ProjectDetail {
+  description: string
+  features: readonly string[]
+  troubleshooting: readonly TroubleshootingItem[]
+  achievements: readonly string[]
 }
