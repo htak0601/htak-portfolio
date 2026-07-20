@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
     period: "2025.12 ~ 2026.01",
     members: "3인",
 
-    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Tanstack Query", "Zod"],
+    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Tanstack Query"],
 
     image: "/images/img_trun.webp",
 
@@ -34,18 +34,22 @@ export const PROJECTS: Project[] = [
 
     githubUrl: "https://github.com/ExplorerTheArea/Experia",
   },
+
   {
     id: 3,
-    slug: "tikintaka",
+    slug: "portfolio",
 
-    title: "티키앤타카",
-    category: "웹 디자인",
+    title: "웹 포트폴리오",
+    category: "개인 프로젝트",
 
-    period: "2022. 06 ~ 2023.08",
+    period: "2026.06 ~ 진행중",
     members: "1인",
 
-    skills: ["Figma", "Illustrator", "Photoshop"],
+    skills: ["Next.js", "TypeScript", "TailwindCSS"],
 
-    image: "/images/img_tikintaka.webp",
+    image: "/images/img_portfolio.png",
+
+    githubUrl: "https://github.com/ExplorerTheArea/Experia",
+    deployUrl: "https://trun-project.vercel.app/",
   },
 ]
